@@ -1,0 +1,132 @@
+0.019   2023-12-09  Released-By: PERLANCAR; Urgency: medium
+
+        - Add schemas: datetime::default_*.
+
+
+0.018   2022-10-12  Released-By: PERLANCAR; Urgency: low
+
+        - No functional changes.
+
+        - [ux] Tweak schema's Abstracts (mention sample data).
+
+
+0.017   2021-08-04  Released-By: PERLANCAR; Urgency: low
+
+	- No functional changes.
+
+        - [build] Rebuild with updated Pod::Weaver::Plugin::Sah::Schemas (0.069)
+          to tweak Synopsis POD section.
+
+	- Tweak examples.
+
+
+0.016   2021-08-04  Released-By: PERLANCAR; Urgency: low
+
+        - No functional changes.
+
+        - [build] Rebuild with updated Pod::Weaver::Plugin::Sah::Schemas (0.068)
+          to tweak Synopsis POD section.
+
+
+0.015   2021-08-04  Released-By: PERLANCAR; Urgency: medium
+
+        - [schema date::year] Restrict to AD only (from 1).
+
+        - [schema date::dow_nums][schema date::month_nums] Make elements
+          required (forbid undef elements), because that's what's expected most
+          of the time.
+
+        - [ux] Add more examples, tweak Summary & Description.
+
+
+0.014   2021-07-19  Released-By: PERLANCAR; Urgency: low
+
+        - No functional changes.
+
+	- [build] Rebuild with updated Pod::Weaver plugin [-Sah::Schemas] to
+          correctly show examples.
+
+
+0.013   2020-03-08  Released-By: PERLANCAR; Urgency: low
+
+        - No functional changes.
+
+	- [build] Rebuild with updated Pod::Weaver plugin [-Sah::Schemas] to
+          correctly show examples.
+
+
+0.012   2020-03-04  Released-By: PERLANCAR; Urgency: medium
+
+	- Update property names in examples (data -> value, res ->
+	  validated_value).
+
+
+0.011   2020-03-04  Released-By: PERLANCAR; Urgency: medium
+
+	- Update examples, use 'value' instead of 'data'.
+
+
+0.010   2020-03-03  Released-By: PERLANCAR; Urgency: medium
+
+	- [date::tz_offset] Tweak coerce rule: allow [+-]HH or [+-]HHMM.
+
+	- Add examples (tests).
+
+
+0.009   2020-02-28  Released-By: PERLANCAR; Urgency: medium
+
+	- [bugfix][date::tz_name] Fix property name (completion ->
+	  x.completion).
+
+
+0.008   2020-02-27  Released-By: PERLANCAR; Urgency: medium
+
+	- Add schemas: date::tz_name, date::tz_offset, date::tz_offset_lax.
+
+
+0.007   2019-11-28  Released-By: PERLANCAR; Urgency: medium
+
+	- Rename coerce rule modules (Data::Sah::Coerce 0.037+).
+
+
+0.006   2019-07-21  Released-By: PERLANCAR; Urgency: low
+
+	- [ux] Tweak completion for dow_num/month_num: remove abbreviated
+	  entries to ease completion.
+
+	- [dist] Edit urgency of v0.005.
+
+
+0.005   2019-07-21  Released-By: PERLANCAR; Urgency: low
+
+	- Add x.completion to date::month_num{,s}.
+
+
+0.004   2019-06-24  Released-By: PERLANCAR
+
+	- Add x.completion rules (Perinci::Sub::XCompletion::*) for
+	  date::dow_num{,s} and date::month_num{,s}.
+
+
+0.003   2019-06-20  Released-By: PERLANCAR
+
+	- [ux] Add schemas: date::dow_nums, date::month_nums.
+
+
+0.002   2019-06-20  Released-By: PERLANCAR
+
+	- [bugfix] Derp, for coerce rule from day-of-week name to number,
+	  Monday=1 not Sunday=1 since we're following DateTime's definition.
+
+
+0.002   2019-06-20  Released-By: PERLANCAR
+
+        - Add coerce rule for date::month_num: str_convert_en_month_name_to_num
+          (from English month name).
+
+        - Add schemas: date::dow_num, date::dow_name::en.
+
+
+0.001   2017-06-17  Released-By: PERLANCAR
+
+        - First release.
