@@ -8,7 +8,7 @@ use strict;
 # VERSION
 
 1;
-# ABSTRACT: Sah schemas related to Indonesian NIK numbers
+# ABSTRACT: Sah schemas related to Indonesian citizenship registration numbers (NIK)
 
 =head1 prepend:SEE ALSO
 
